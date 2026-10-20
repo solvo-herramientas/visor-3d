@@ -1,0 +1,27 @@
+{
+  "name": "SOLVO Visor 3D",
+  "short_name": "Visor 3D",
+  "description": "Abrí y medí archivos STL, STEP, 3MF y OBJ. Estimá la masa por material y pedí cotización a SOLVO.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#11151A",
+  "theme_color": "#11151A",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "model/stl": [".stl"],
+        "model/step": [".step", ".stp"],
+        "model/3mf": [".3mf"],
+        "model/obj": [".obj"]
+      }
+    }
+  ]
+}
